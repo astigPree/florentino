@@ -1,0 +1,13 @@
+# Ignore virtual environment folder
+venv/
+
+# Ignore Python bytecode
+*.pyc
+
+
+# Ignore system files
+.DS_Store
+
+# Ignore project-specific files
+secret_config.yaml
+
