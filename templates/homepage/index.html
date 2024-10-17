@@ -8,6 +8,8 @@
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
     <meta name="author" content="{{ author }}">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     
 
 {% endblock head_block %}
@@ -15,7 +17,102 @@
 
 {% block body_block %}
 
-    
+    <header class="tool-bar">
+        <img class="tool-bar-icon" src="{% static 'media/logo.webp' %}" alt="florentino">
+        <h1 >Florentino</h1>
+        <img class="tool-bar-hamburger" src="{% static 'media/hamburger.svg' %}" alt="hamburger">
+    </header>
+
+    <main class="main-content">
+
+        <article class="about-us-container" >
+
+             
+            
+            <div class="about-us-content">
+
+                <h2 class="about-us-name">
+                    FLORENTINO PRINTING SERVICES
+                </h2>
+
+                <article class="about-us-mission prompt-semibold ">
+                    To deliver high-quality, reliable printing services  with a commitment to customer satisfaction and innovation. Founded in 2007, Florentino Printing has and always will be trusted by many for our quality service.
+                </article>
+
+            </div>
+
+            
+
+        </article>
+
+        <article class="services-container">
+
+            <h2 class="services-title">
+                SERVICES
+            </h2>
+
+            <div class="services-cards-container">
+
+
+                <div class="service-card">
+                    <div class="service-information">
+                        <strong class="service-title prompt-semibold">Digital Printing</strong>
+                        <p class="service-descriptions prompt-light">High-quality digital prints for business cards, flyers, and posters. Ideal for vibrant and precise outcomes.</p>
+                    </div>
+
+                </div>
+
+                <div class="service-card">
+                    <div class="service-information">
+                        <strong class="service-title prompt-semibold">Offset Printing</strong>
+                        <p class="service-descriptions prompt-light">Reliable and cost-effective printing for large quantities. Perfect for maintaining consistency across large orders.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-information">
+                        <strong class="service-title prompt-semibold">Large-Format Printing</strong>
+                        <p class="service-descriptions prompt-light">Stunning banners and signage. Great for making a big impact and drawing attention.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </article>
+
+
+        <article class="message-container">
+            
+
+            <h2 class="message-title">
+                GET IN TOUCH
+            </h2>
+
+            <form action="" method="post" >
+
+                <input type="text" name="name" placeholder="Enter your name" class="input-box prompt-light-italic">
+                
+                <input type="text" name="email" placeholder="Your email for us to reach you" class="input-box prompt-light-italic">
+
+                <label class="message-box-label prompt-medium" for="message"> Message </label>
+                <textarea class="message-box prompt-light-italic" name="message" id="message" placeholder="Enter your printing needs or inquiries . . . "></textarea>
+
+                <button type="submit" class="submit-button "> 
+                    <img class="button-icon" src="{% static 'media/send icon.svg' %}" alt="send icon">  
+                    <span class="prompt-extrabold button-text ">Send Request</span> 
+                </button>
+
+            </form>
+
+        </article>
+        
+
+    </main>
 
 
 
