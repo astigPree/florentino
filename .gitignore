@@ -11,3 +11,4 @@ venv/
 # Ignore project-specific files
 secret_config.yaml
 
+db.sqlite3
