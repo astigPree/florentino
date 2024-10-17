@@ -9,5 +9,6 @@ def homepage(request):
     context['title'] = 'Florentino'
     context['description'] = 'Founded in 2007, Florentino Printing has and always been trusted by many for our quality service.'
     context['keywords'] = 'florentino printing, printing, masbate city, printing sevices'
+    context['author'] = 'Florentino Printing'
     
     return render(request, 'homepage/index.html', context=context)
