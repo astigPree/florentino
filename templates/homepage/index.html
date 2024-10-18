@@ -20,7 +20,7 @@
     <header class="tool-bar">
         <img class="tool-bar-icon" src="{% static 'media/logo.webp' %}" alt="florentino">
         <h1 >Florentino</h1>
-        <img class="tool-bar-hamburger" src="{% static 'media/hamburger.svg' %}" alt="hamburger">
+        <div class="tool-bar-hamburger"></div>
     </header>
 
     <main class="main-content">
@@ -54,27 +54,27 @@
             <div class="services-cards-container">
 
 
-                <div class="service-card">
+                <div class="service-card" style="background-image: url('{% static 'media/blueprint service.webp' %}');">
                     <div class="service-information">
-                        <strong class="service-title prompt-semibold">Digital Printing</strong>
-                        <p class="service-descriptions prompt-light">High-quality digital prints for business cards, flyers, and posters. Ideal for vibrant and precise outcomes.</p>
+                        <strong class="service-title prompt-extrabold">Blueprints & Plotter Services</strong>
+                        <p class="service-descriptions prompt-light">Precise blueprint printing, plotter services, and high-quality tracing paper. Ideal for architects, engineers, and creative professionals.</p>
                     </div>
 
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" style="background-image: url('{% static 'media/crafting service.webp' %}');">
                     <div class="service-information">
-                        <strong class="service-title prompt-semibold">Offset Printing</strong>
-                        <p class="service-descriptions prompt-light">Reliable and cost-effective printing for large quantities. Perfect for maintaining consistency across large orders.</p>
+                        <strong class="service-title prompt-extrabold">Wedding Invitations & Crafting</strong>
+                        <p class="service-descriptions prompt-light">Elegant, glittered bifold invitations and exquisite crafting services. Designed to add a touch of sparkle to your special day.</p>
                     </div>
 
                 </div>
 
 
-                <div class="service-card">
+                <div class="service-card" style="background-image: url('{% static 'media/tshirt service.webp' %}');">
                     <div class="service-information">
-                        <strong class="service-title prompt-semibold">Large-Format Printing</strong>
-                        <p class="service-descriptions prompt-light">Stunning banners and signage. Great for making a big impact and drawing attention.</p>
+                        <strong class="service-title prompt-extrabold">T-Shirt Printing</strong>
+                        <p class="service-descriptions prompt-light">High-quality custom T-shirt graphics. Perfect for personal and promotional use.</p>
                     </div>
 
                 </div>
@@ -114,6 +114,37 @@
 
     </main>
 
+    <footer class="contact-us-container">
+
+        <h2 class="contact-us-title">
+            CONTACT US
+        </h2>
+
+        <ul class="contact-list">
+           <li>
+                <img src="{% static 'media/email icon.svg' %}" alt="email icon">
+                <strong class="prompt-light-italic">florentino.printing@gmail.com</strong>
+           </li> 
+           <li>
+                <img src="{% static 'media/phone icon.svg' %}" alt="phone icon">
+                <strong class="prompt-light-italic">+639123456789</strong>
+           </li>
+           <li>
+                <img src="{% static 'media/time icon.svg' %}" alt="clock icon">
+                <strong class="prompt-light-italic">Monday - Friday: 8:00 AM - 5:00 PM</strong>
+           </li>
+           <li>
+                <img src="{% static 'media/location icon.svg' %}" alt="location icon">
+                <strong class="prompt-light-italic">123 Print Lane, Masbate, Bicol Region, Philippines</strong>
+           </li>
+
+        </ul>
+
+        <h1 class="footer-message protest-strike-regular">
+            " Reach out to us for all your printing needs. We're here to help! "
+        </h1>
+
+    </footer>
 
 
 {% endblock body_block %}

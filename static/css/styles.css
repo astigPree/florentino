@@ -30,7 +30,7 @@
 }
 
 .tool-bar-icon{
-    margin-left: 16px;
+    margin-left: 24px;
 }
 
 .tool-bar-hamburger{
@@ -43,7 +43,9 @@
     margin: 0; 
     font-family: 'durango sans-serif';
     flex: 1;
-    color: var(--color-1);
+    color: var(--color-1); 
+    margin-left: 8px;
+
 }
 
 
@@ -125,10 +127,13 @@
     display: flex;
     width: 100%;
     height: fit-content;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin-top: 24px;
     row-gap: 24px;
+    column-gap: 24px;
+    flex-wrap: wrap;
 }
 
 
@@ -157,6 +162,9 @@
     padding: 0;
     margin: 0;
     font-size: 14px;
+    color: var(--color-5);
+    -webkit-text-stroke-width: 0.4px; /* Stroke width */
+    -webkit-text-stroke-color: white; /* Stroke color */
 }
 
 .service-descriptions{
@@ -243,4 +251,80 @@ form{
     left: 80px;
     cursor: pointer;
 }
+
+
+.contact-us-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 32px;
+    background: rgba(140, 167, 255, 0.7);
+    background: -webkit-linear-gradient(269deg, rgba(140, 167, 255, 0.7) 0%, #fde7d1 100%);
+    background: linear-gradient(269deg, rgba(140, 167, 255, 0.7) 0%, #fde7d1 100%);
+}
+
+
+.contact-us-title{
+    font-family: 'durango sans-serif';
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    text-align: center; 
+    margin-top: 30px;
+    color: var(--color-1); 
+    align-self: flex-start;
+    margin-left: 24px;
+}
+
+.contact-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.contact-list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.contact-list img{
+    height: 24px;
+    width: 24px;
+}
+
+.contact-list strong{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: var(--color-5);
+    opacity: 0.8;
+}
+
+
+.footer-message{ 
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    text-align: center; 
+    margin-top: 24px;
+    color: var(--color-1);
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+}
+
+
+
+
 
